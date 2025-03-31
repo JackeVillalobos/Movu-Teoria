@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso de Datos - Movu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pantalla-datos">
+  <header class="barra-superior">
+    <img src="assets/movu.png" alt="Logo Movu" class="logo-header">
+    <nav>
+      <a href="acerca.html">Acerca de</a>
+    </nav>
+  </header>
+
+  <main class="contenedor-datos">
+    <section class="formulario-datos">
+      <h1>Ingrese los datos</h1>
+      <form id="formulario">
+        <label for="origen">Dirección de origen</label>
+        <input type="text" id="origen" required placeholder="Ingrese la dirección">
+
+        <label for="destino">Dirección de destino</label>
+        <input type="text" id="destino" required placeholder="Ingrese la dirección">
+
+        <label for="peso">Peso (aproximado)</label>
+        <input type="number" id="peso" required placeholder="Ingrese el valor">
+
+        <label for="vehiculo">Tipo de Vehículo</label>
+        <select id="vehiculo" required>
+          <option value="">Seleccione el tipo de vehículo</option>
+          <option value="pickup">Pickup</option>
+          <option value="camion">Camión de mudanza</option>
+        </select>
+      </form>
+    </section>
+
+    <section class="mapa-y-boton">
+      <div class="mapa-simulacion">
+        <!-- Aquí podrías incrustar un iframe real de Google Maps -->
+        <img src="assets/mapa-ejemplo.png" alt="Mapa" class="mapa-fake">
+      </div>
+      <button type="submit" form="formulario" class="boton-calcular">Calcular datos</button>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

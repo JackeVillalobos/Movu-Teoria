@@ -1,0 +1,241 @@
+.pantalla-inicio {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c8c8c8;
+    font-family: sans-serif;
+  }
+  
+  .contenedor-inicio {
+    width: 90%;
+    max-width: 1000px;
+    height: 90vh;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+  }
+  
+  .lado-izquierdo {
+    flex: 1;
+    background-color: #092a39; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-grande {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .lado-derecho {
+    flex: 1;
+    background-color: #1c1e1c; 
+    color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .lado-derecho h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .lado-derecho p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+  
+  .lado-derecho button {
+    padding: 0.8rem 2rem;
+    background-color: #003f4c;
+    color: #2df1a9;
+    border: 2px solid #2df1a9;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .lado-derecho button:hover {
+    background-color: #2df1a9;
+    color: #003f4c;
+  }
+
+  /*datos*/
+  .pantalla-datos {
+    margin: 0;
+    background-color: #f8f4ff;
+    font-family: sans-serif;
+    color: #111;
+  }
+  
+  .barra-superior {
+    background-color: #002c3e;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-header {
+    height: 40px;
+  }
+  
+  .barra-superior a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contenedor-datos {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .formulario-datos {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .formulario-datos h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .formulario-datos label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .formulario-datos input,
+  .formulario-datos select {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+  }
+  
+  .mapa-y-boton {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .mapa-simulacion {
+    width: 100%;
+    height: 250px;
+    background-color: #e0e0e0;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mapa-fake {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .boton-calcular {
+    background-color: #003f4c;
+    color: #00ffcc;
+    border: 2px solid #00ffcc;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .boton-calcular:hover {
+    background-color: #00ffcc;
+    color: #003f4c;
+  }
+  
+  /*acerca de*/
+  
+.pantalla-acerca {
+  background-color: #f9f9f9;
+  color: #222;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.contenedor-acerca {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.texto-acerca h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  color: gray;
+  font-weight: normal;
+  margin-top: -0.5rem;
+}
+
+.texto-acerca p {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.logo-acerca img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.botones-acerca {
+  grid-column: span 2;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.boton-info {
+  width: 200px;
+  height: 100px;
+  background-color: #ececec;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-info .mini {
+  font-size: 0.8rem;
+  color: gray;
+  margin-top: 0.3rem;
+}
